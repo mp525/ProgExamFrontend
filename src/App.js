@@ -106,12 +106,12 @@ function Header({ loggedIn, loginMsg }) {
         <>
           <li>
             <NavLink activeClassName="active" to="/page3">
-              Page 3
+              User page
             </NavLink>
           </li>
           <li>
             <NavLink exact activeClassName="active" to="/page4">
-              Page 4
+              Admin page
             </NavLink>
           </li>
         </>
@@ -136,18 +136,13 @@ function NoMatch() {
 
 function Home() {
   return (
-    <>
-      <h3>Use instructions</h3>
+    <div align="center">
+      <h1>Welcome to the sports team!</h1>
       <p>
-        In settings.js, change the URL's to match the current project.<br/>
-        Refactor navlinks to match project domain.<br/>
-        Page 1 diplayes fetched results from default endpoint in backend.<br/>
-        Page 2 is a blank slate. <br/>
-        Login page allows a user to login, if username and password is in the database.<br/>
-        Page 3 (after login) shows info about the user.<br/>
-        Page 4 (after login) shows info about admin user.
+        Use this site to register players, teams and new sports.
+        View current sports we offer training in, and more!
       </p>
-    </>
+    </div>
   );
 }
 
